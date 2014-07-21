@@ -7,6 +7,8 @@ A basic vagrant box for Grails development.
 * [VirtualBox](https://www.virtualbox.org)
 * [Vagrant](http://vagrantup.com)
 
+Tested on VirtualBox 4.3.12 and Vagrant 1.6.0
+
 #Installation
 
 ```bash
@@ -25,3 +27,7 @@ $ run-app
 ```
 
 Open your browser and go to [http://192.168.222.222:8080/helloworld/hello/world](http://192.168.222.222:8080/helloworld/hello/world)
+
+#Credits
+
+* [Instant Java provisioning with Vagrant and Puppet](https://bitbucket.org/durdn/stash-vagrant-install.git)
