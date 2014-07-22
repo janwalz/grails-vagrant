@@ -10,6 +10,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network :forwarded_port, guest: 8080, host: 2323  
   config.vm.network :private_network, ip: "192.168.222.222"
 
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 1536
+    v.cpus = 2
+  end
+
   config.vm.synced_folder "grails-app", "/vagrant"
 
   config.vm.provision :puppet, :module_path => "modules" do |puppet|
